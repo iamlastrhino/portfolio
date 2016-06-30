@@ -1,0 +1,132 @@
+<!-- 
+<div class="container" style="background: yellow;">
+<div class="row">
+  <div class="col-sm-6 col-md-4 col-lg-4" style="border: 5px solid red;">.col-md-4</div>
+  <div class="col-sm-6 col-md-4 col-lg-4" style="border: 5px solid red;">.col-md-4</div>
+  <div class="col-sm-6 col-md-4 col-lg-4" style="border: 5px solid red;">.col-md-4</div>
+</div>
+</div>
+
+
+<div class="container-fluid" style="background: yellow;">
+<div class="row">
+  <div class="col-sm-4" style="border: 5px solid red;">.col-md-4</div>
+  <div class="col-sm-4" style="border: 5px solid red;">.col-md-4</div>
+  <div class="col-sm-4" style="border: 5px solid red;">.col-md-4</div>
+</div>
+</div>
+
+<div class="container" style="background: yellow;">
+<div class="row">
+  <div class="col-sm-1" style="border: 5px solid red;">1</div>
+  <div class="col-sm-1" style="border: 5px solid red;">2</div>
+  <div class="col-sm-1" style="border: 5px solid red;">3</div>
+  <div class="col-sm-1" style="border: 5px solid red;">4</div>
+  <div class="col-sm-1" style="border: 5px solid red;">5</div>
+  <div class="col-sm-1" style="border: 5px solid red;">6</div>
+  <div class="col-sm-1" style="border: 5px solid red;">7</div>
+  <div class="col-sm-1" style="border: 5px solid red;">8</div>
+  <div class="col-sm-1" style="border: 5px solid red;">9</div>
+  <div class="col-sm-1" style="border: 5px solid red;">10</div>
+  <div class="col-sm-1" style="border: 5px solid red;">11</div>
+  <div class="col-sm-1" style="border: 5px solid red;">12</div>
+</div>
+</div>
+
+<div class="container-fluid" style="background: yellow;">
+<div class="row">
+  <div class="col-xs-1" style="border: 5px solid red;">1</div>
+  <div class="col-xs-1" style="border: 5px solid red;">2</div>
+  <div class="col-xs-1" style="border: 5px solid red;">3</div>
+  <div class="col-xs-1" style="border: 5px solid red;">4</div>
+  <div class="col-xs-1" style="border: 5px solid red;">5</div>
+  <div class="col-xs-1" style="border: 5px solid red;">6</div>
+  <div class="col-xs-1" style="border: 5px solid red;">7</div>
+  <div class="col-xs-1" style="border: 5px solid red;">8</div>
+  <div class="col-xs-1" style="border: 5px solid red;">9</div>
+  <div class="col-xs-1" style="border: 5px solid red;">10</div>
+  <div class="col-xs-1" style="border: 5px solid red;">11</div>
+  <div class="col-xs-1" style="border: 5px solid red;">12</div>
+</div>
+</div>
+-->
+
+<div class="container-fluid">
+  <div class="col-sm-3">
+    <img alt="Ryan Wilson" src="/images/ryanheadshot.jpg" class="img-responsive img-circle">
+  </div>
+  <div class="col-sm-9">
+    <p>Hey there, my name is Ryan Wilson. I am a technology professional in Seattle.</p>
+    <p>This is a quick AngularJS Single Page Application that I through together to display some of my professional work. Feel free to take a look at the source code here <a href="https://github.com/iamlastrhino/portfolio" target="_new">github.com/iamlastrhino/portfolio</a>.</p>
+  </div>
+</div>
+
+
+<h2>My Work</h2>
+
+<div ng-controller="MainCtrl as works" class="container-fluid">
+  <div class="row" ng-show="works">
+    <div ng-repeat="work in works.portfolios.works">
+
+
+  <div class="col-sm-4" >
+    <div class="hovereffect">
+      <img alt="" class="portfolioThumb img-responsive" ng-src="{{work.thumb}}" style="height: auto; width: 100%; max-width: 300px; max-height: 300px;">
+      <div class="overlay">
+        <h2>{{work.company}}</h2>
+        <a class="info" href="#">link here</a>
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!--
+
+  <div class="parent">
+    <div class="wide">yyy</div>
+      <div class="narrow">
+      Disney Cruise Line<br/>
+      Child Registration<br/>
+      <ul>
+        <li>Tech Lead and Lead Developer</li>
+        <li>Mobile first design</li>
+        <li>Node.js, AngularJS, Grunt, Jenkins, GIT</li>
+        <li>Service designed to be shared with native mobile applications</li>
+      </ul>
+    </div>
+  </div>
+
+
+<div class="jumbotron">
+  <div class="parent">
+      <div class="narrow">
+      Disney Cruise Line<br/>
+      Child Registration<br/>
+      <ul>
+        <li>Tech Lead and Lead Developer</li>
+        <li>Mobile first design</li>
+        <li>Node.js, AngularJS, Grunt, Jenkins, GIT</li>
+        <li>Service designed to be shared with native mobile applications</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wide">yyy</div>
+</div>
+
+<div class="jumbotron">
+  <h1>'Allo, 'Allo!</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Always a pleasure scaffolding your apps.
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+</div>
+
+
+    <h1>{{ 'TITLE' | translate }}</h1>
+    <p>{{ 'FOO' | translate }}</p>
+
+-->
