@@ -4,77 +4,77 @@
          "company": "Disney Cruise Line",
          "title": "Child Registration",
          "description": "Disney Cruise Line Child Registration Application",
-         "template": "portfolio.dcl.childreg.html"
+         "template": "modal.portfolio.dcl.childreg.html"
      },
      {
          "thumb": "/images/thumbs/disney_finder_thumb.png",
-         "company": "Disney",
-         "title": "Disney Cruise Line",
+         "company": "Walt Disney",
+         "title": "Disney World, Disneyland, Disneyland Paris, Shanghai Disneyland - Finder application",
          "description": "Disney Description",
-         "template": "portfolio.dcl.html"
+         "template": "modal.portfolio.disney.finder.html"
      },
      {
          "thumb": "/images/thumbs/disney_photopass_thumb.png",
-         "company": "Disney",
-         "title": "Disney Cruise Line",
+         "company": "Disney World",
+         "title": "Photopass mobile and web application",
          "description": "Disney Description",
-         "template": "portfolio.dcl.html"
+         "template": "modal.portfolio.disney.photopass.html"
      },
      {
          "thumb": "/images/thumbs/disney_dcl_fantasy_thumb.png",
-         "company": "Disney",
-         "title": "Disney Cruise Line",
+         "company": "Disney Cruise Line",
+         "title": "Fantasy launch site",
          "description": "Disney Description",
-         "template": "portfolio.dcl.html"
+         "template": "modal.portfolio.dcl.fantasy.html"
      },
      {
          "thumb": "/images/thumbs/dcl_portadventures_thumb.png",
-         "company": "Disney",
-         "title": "Disney Cruise Line",
+         "company": "Disney Cruise Line",
+         "title": "Port Adventure Registration",
          "description": "Disney Description",
-         "template": "portfolio.dcl.html"
+         "template": "modal.portfolio.dcl.portadventures.html"
      },
      {
          "thumb": "/images/thumbs/st_thumb.png",
          "company": "Seattle Times",
-         "title": "Disney Cruise Line",
-         "description": "Disney Description",
-         "template": "portfolio.dcl.html"
+         "title": "SeattleTimes.com",
+         "description": "",
+         "template": "modal.portfolio.st.html"
      },
      {
          "thumb": "/images/thumbs/nwsource_thumb.png",
-         "company": "Seattle Times",
-         "title": "Disney Cruise Line",
-         "description": "Disney Description",
-         "template": "portfolio.dcl.html"
+         "company": "NWSource.com",
+         "title": "Seattle Times marketplace and local portal",
+         "description": "",
+         "template": "modal.portfolio.nwsource.html"
      },
      {
          "thumb": "/images/thumbs/nwautos_thumb.png",
-         "company": "Seattle Times",
-         "title": "Disney Cruise Line",
-         "description": "Disney Description",
-         "template": "portfolio.dcl.html"
+         "company": "NWAutos.com",
+         "title": "Seattle Times autos marketplace",
+         "description": "",
+         "template": "modal.portfolio.nwautos.html"
      },
      {
          "thumb": "/images/thumbs/fhlbsea_thumb.png",
          "company": "FHLBSEA",
-         "title": "Disney Cruise Line",
-         "description": "Disney Description",
-         "template": "portfolio.dcl.html"
+         "title": "Federal Home Loan Bank of Seattle website",
+         "description": "",
+         "template": "modal.portfolio.fhlbsea.html"
      },
      {
          "thumb": "/images/thumbs/fhlbsea_ahp_thumb.png",
          "company": "FHLBSEA",
-         "title": "Disney Cruise Line",
-         "description": "Disney Description",
-         "template": "portfolio.dcl.html"
+         "title": "Federal Home Loan Bank of Seattle Affordable Housing Program Application",
+         "description": "",
+         "template": "modal.portfolio.fhlbsea.ahp.html"
      },
      {
          "thumb": "/images/thumbs/freeinternet_thumb.png",
          "company": "FreeInternet.com",
-         "title": "Disney Cruise Line",
-         "description": "Disney Description",
-         "template": "portfolio.dcl.html"
+         "title": "Free Internet merged with NetZero",
+         "description": "",
+         "template": "modal.portfolio.freeinternet.html"
      }
      ]
  }

@@ -42,35 +42,48 @@
     //translations
     console.log('translations');
     $translateProvider.translations('en', {
-      'TITLE': 'Portfolio for Ryan Wilson',
-      'FOO': 'This is a paragraph'
+      'TITLE': 'Portfolio for Ryan Wilson'
     });
    
     $translateProvider.translations('de', {
-      'TITLE': 'Cartera para Ryan Wilson',
-      'FOO': 'Dies ist ein Absatz'
+      'TITLE': 'Cartera para Ryan Wilson'
     });
    
     $translateProvider.preferredLanguage('en');
   }]);
 
-
-  portfolioApp.directive('contactModal', function($uibModal) {
+  portfolioApp.directive('openModal', function($uibModal) {
     return {
-        restrict: 'EA',
-        link: function(scope, elem, attrs) {
-          elem.bind('click', function() {
-            var modalInstance = $uibModal.open({
-                animation: true,
-                templateUrl: 'views/contact.html',
-                size: 'sm',
-            });
-
-            modalInstance.result.then(function(selectedItem) {
-                scope.selected = selectedItem;
-            }, function() {});
+      restrict: 'EA',
+      link: function(scope, elem, attrs) {
+        elem.bind('click', function() {
+          var size = attrs.size || 'lg';
+          var modalInstance = $uibModal.open({
+              animation: true,
+              templateUrl: 'views/modals/'+attrs.template,
+              size: size,
+              scope: scope,
           });
-        }
+console.log(attrs);
+          modalInstance.result.then(function(selectedItem) {
+              scope.selected = selectedItem;
+          }, function() {});
+        });
+      }
     };
-});
+  });
 
+  portfolioApp.directive('closeModal', function($uibModal, $uibModalStack) {
+    return {
+      restrict: 'EA',
+      link: function(scope, elem, attrs) {
+        elem.bind('click', function() {
+        $uibModalStack.dismissAll();
+        });
+      }
+    };
+  });
+
+  $(window).on('popstate', function() {
+  alert('Back button was pressed.');
+});

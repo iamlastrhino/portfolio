@@ -22,4 +22,5 @@ angular.module('portfolioApp')
     	MainCtrl.portfolios = data;
     	console.log(MainCtrl.portfolios);
     });
+
   }]);
