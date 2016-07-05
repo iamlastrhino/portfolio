@@ -9,9 +9,4 @@
  */
 angular.module('portfolioApp')
   .controller('ResumeCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
   });

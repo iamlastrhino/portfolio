@@ -1,80 +1,71 @@
  {
+    "headertemplate": "views/modals/portfolio.top.html",
+    "footertemplate": "views/modals/portfolio.bottom.html",
      "works": [{
          "thumb": "/images/thumbs/disney_dcl_childreg_thumb.png",
          "company": "Disney Cruise Line",
          "title": "Child Registration",
-         "description": "Disney Cruise Line Child Registration Application",
          "template": "modal.portfolio.dcl.childreg.html"
      },
      {
          "thumb": "/images/thumbs/disney_finder_thumb.png",
-         "company": "Walt Disney",
+         "company": "Disney Parks",
          "title": "Disney World, Disneyland, Disneyland Paris, Shanghai Disneyland - Finder application",
-         "description": "Disney Description",
          "template": "modal.portfolio.disney.finder.html"
      },
      {
          "thumb": "/images/thumbs/disney_photopass_thumb.png",
-         "company": "Disney World",
+         "company": "Disney PhotoPass",
          "title": "Photopass mobile and web application",
-         "description": "Disney Description",
          "template": "modal.portfolio.disney.photopass.html"
      },
      {
          "thumb": "/images/thumbs/disney_dcl_fantasy_thumb.png",
          "company": "Disney Cruise Line",
          "title": "Fantasy launch site",
-         "description": "Disney Description",
          "template": "modal.portfolio.dcl.fantasy.html"
      },
      {
          "thumb": "/images/thumbs/dcl_portadventures_thumb.png",
          "company": "Disney Cruise Line",
          "title": "Port Adventure Registration",
-         "description": "Disney Description",
          "template": "modal.portfolio.dcl.portadventures.html"
      },
      {
          "thumb": "/images/thumbs/st_thumb.png",
          "company": "Seattle Times",
          "title": "SeattleTimes.com",
-         "description": "",
          "template": "modal.portfolio.st.html"
+     },
+     {
+         "thumb": "/images/thumbs/srw_thumb.png",
+         "company": "Seattle Restaurant Week",
+         "title": "Seattle Times",
+         "template": "modal.portfolio.srw.html"
      },
      {
          "thumb": "/images/thumbs/nwsource_thumb.png",
          "company": "NWSource.com",
          "title": "Seattle Times marketplace and local portal",
-         "description": "",
          "template": "modal.portfolio.nwsource.html"
      },
      {
          "thumb": "/images/thumbs/nwautos_thumb.png",
          "company": "NWAutos.com",
          "title": "Seattle Times autos marketplace",
-         "description": "",
          "template": "modal.portfolio.nwautos.html"
      },
      {
          "thumb": "/images/thumbs/fhlbsea_thumb.png",
          "company": "FHLBSEA",
          "title": "Federal Home Loan Bank of Seattle website",
-         "description": "",
          "template": "modal.portfolio.fhlbsea.html"
      },
      {
          "thumb": "/images/thumbs/fhlbsea_ahp_thumb.png",
          "company": "FHLBSEA",
          "title": "Federal Home Loan Bank of Seattle Affordable Housing Program Application",
-         "description": "",
          "template": "modal.portfolio.fhlbsea.ahp.html"
-     },
-     {
-         "thumb": "/images/thumbs/freeinternet_thumb.png",
-         "company": "FreeInternet.com",
-         "title": "Free Internet merged with NetZero",
-         "description": "",
-         "template": "modal.portfolio.freeinternet.html"
      }
      ]
  }

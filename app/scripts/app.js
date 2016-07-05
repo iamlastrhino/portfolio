@@ -19,14 +19,17 @@
     'ngTouch',
     'pascalprecht.translate',
     'ui.bootstrap'
-  ]);
+  ])
+  .controller('MainCtrl', function($scope, $location) {
+    $scope.$location = $location;
+  });
 
   portfolioApp.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
+        templateUrl: 'views/portfolio.html',
+        controller: 'PortfolioCtrl',
+        controllerAs: 'portfolio'
       })
       .when('/resume', {
         templateUrl: 'views/resume.html',
@@ -40,7 +43,6 @@
 
   portfolioApp.config(['$translateProvider', function ($translateProvider) {
     //translations
-    console.log('translations');
     $translateProvider.translations('en', {
       'TITLE': 'Portfolio for Ryan Wilson'
     });
@@ -64,7 +66,6 @@
               size: size,
               scope: scope,
           });
-console.log(attrs);
           modalInstance.result.then(function(selectedItem) {
               scope.selected = selectedItem;
           }, function() {});
@@ -76,7 +77,7 @@ console.log(attrs);
   portfolioApp.directive('closeModal', function($uibModal, $uibModalStack) {
     return {
       restrict: 'EA',
-      link: function(scope, elem, attrs) {
+      link: function(scope, elem) {
         elem.bind('click', function() {
         $uibModalStack.dismissAll();
         });
@@ -84,6 +85,3 @@ console.log(attrs);
     };
   });
 
-  $(window).on('popstate', function() {
-  alert('Back button was pressed.');
-});

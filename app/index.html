@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body>
+  <body ng-controller="MainCtrl as main">
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -38,8 +38,8 @@
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
             <ul class="nav navbar-nav">
-              <li class="active link"><a href="#/">Portfolio</a></li>
-              <li class="link"><a ng-href="#/resume">Resume</a></li>
+              <li ng-class="{ active: $location.path() == '/'}" class="link"><a href="#/">Portfolio</a></li>
+              <li ng-class="{ active: $location.path() == '/resume'}" class="link"><a ng-href="#/resume">Resume</a></li>
               <li class="link"><a open-modal template="modal.contact.html" size="sm">Contact</a></li>
             </ul>
           </div>
@@ -77,7 +77,7 @@
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/portfolio.js"></script>
     <script src="scripts/controllers/resume.js"></script>
     <!-- endbuild -->
 
