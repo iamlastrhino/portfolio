@@ -19,12 +19,12 @@
     <div ng-repeat="work in works.portfolios.works">
 
 
-  <div open-modal template="{{work.template}}" class="col-sm-4" >
+  <div detail-link detail-key="{{work.key}}" class="col-sm-4" >
     <div class="hovereffect">
       <img alt="" class="portfolioThumb img-responsive" ng-src="{{work.thumb}}" style="height: auto; width: 100%; max-width: 300px; max-height: 300px;">
       <div class="overlay">
         <h2>{{work.company}}</h2>
-        <a class="info link" href="/#/">Details</a>
+        <a detail-link detail-key="{{work.key}}" class="info link">Details</a>
       </div>
     </div>
   </div>

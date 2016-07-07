@@ -1,71 +1,82 @@
  {
-    "headertemplate": "views/modals/portfolio.top.html",
-    "footertemplate": "views/modals/portfolio.bottom.html",
+    "headertemplate": "views/portfolio.top.html",
+    "footertemplate": "views/portfolio.bottom.html",
      "works": [{
+         "key": "dcl.childreg",
          "thumb": "/images/thumbs/disney_dcl_childreg_thumb.png",
          "company": "Disney Cruise Line",
          "title": "Child Registration",
-         "template": "modal.portfolio.dcl.childreg.html"
+         "template": "portfolio.dcl.childreg.html"
      },
      {
+         "key": "disney.finder",
          "thumb": "/images/thumbs/disney_finder_thumb.png",
          "company": "Disney Parks",
          "title": "Disney World, Disneyland, Disneyland Paris, Shanghai Disneyland - Finder application",
-         "template": "modal.portfolio.disney.finder.html"
+         "template": "portfolio.disney.finder.html"
      },
      {
+         "key": "disney.photopass",
          "thumb": "/images/thumbs/disney_photopass_thumb.png",
          "company": "Disney PhotoPass",
          "title": "Photopass mobile and web application",
-         "template": "modal.portfolio.disney.photopass.html"
+         "template": "portfolio.disney.photopass.html"
      },
      {
+         "key": "dcl.fantasy",
          "thumb": "/images/thumbs/disney_dcl_fantasy_thumb.png",
          "company": "Disney Cruise Line",
          "title": "Fantasy launch site",
-         "template": "modal.portfolio.dcl.fantasy.html"
+         "template": "portfolio.dcl.fantasy.html"
      },
      {
+         "key": "dcl.portadventures",
          "thumb": "/images/thumbs/dcl_portadventures_thumb.png",
          "company": "Disney Cruise Line",
          "title": "Port Adventure Registration",
-         "template": "modal.portfolio.dcl.portadventures.html"
+         "template": "portfolio.dcl.portadventures.html"
      },
      {
+         "key": "st",
          "thumb": "/images/thumbs/st_thumb.png",
          "company": "Seattle Times",
          "title": "SeattleTimes.com",
-         "template": "modal.portfolio.st.html"
+         "template": "portfolio.st.html"
      },
      {
+         "key": "srw",
          "thumb": "/images/thumbs/srw_thumb.png",
          "company": "Seattle Restaurant Week",
          "title": "Seattle Times",
-         "template": "modal.portfolio.srw.html"
+         "template": "portfolio.srw.html"
      },
      {
+         "key": "nwsource",
          "thumb": "/images/thumbs/nwsource_thumb.png",
          "company": "NWSource.com",
          "title": "Seattle Times marketplace and local portal",
-         "template": "modal.portfolio.nwsource.html"
+         "template": "portfolio.nwsource.html"
      },
      {
+         "key": "nwautos",
          "thumb": "/images/thumbs/nwautos_thumb.png",
          "company": "NWAutos.com",
          "title": "Seattle Times autos marketplace",
-         "template": "modal.portfolio.nwautos.html"
+         "template": "portfolio.nwautos.html"
      },
      {
+         "key": "fhlbsea",
          "thumb": "/images/thumbs/fhlbsea_thumb.png",
          "company": "FHLBSEA",
          "title": "Federal Home Loan Bank of Seattle website",
-         "template": "modal.portfolio.fhlbsea.html"
+         "template": "portfolio.fhlbsea.html"
      },
      {
+         "key": "fhlbsea.ahp",
          "thumb": "/images/thumbs/fhlbsea_ahp_thumb.png",
          "company": "FHLBSEA",
          "title": "Federal Home Loan Bank of Seattle Affordable Housing Program Application",
-         "template": "modal.portfolio.fhlbsea.ahp.html"
+         "template": "portfolio.fhlbsea.ahp.html"
      }
      ]
  }

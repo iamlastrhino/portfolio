@@ -36,6 +36,11 @@
         controller: 'ResumeCtrl',
         controllerAs: 'resume'
       })
+      .when('/detail/:portfolio', {
+        templateUrl: 'views/detail.html',
+        controller: 'DetailCtrl',
+        controllerAs: 'detail'
+      })
       .otherwise({
         redirectTo: '/'
       });
@@ -54,7 +59,7 @@
     $translateProvider.preferredLanguage('en');
   }]);
 
-  portfolioApp.directive('openModal', function($uibModal) {
+  portfolioApp.directive('openModal', function($uibModal, $location, analytics) {
     return {
       restrict: 'EA',
       link: function(scope, elem, attrs) {
@@ -62,10 +67,11 @@
           var size = attrs.size || 'lg';
           var modalInstance = $uibModal.open({
               animation: true,
-              templateUrl: 'views/modals/'+attrs.template,
+              templateUrl: 'views/'+attrs.template,
               size: size,
               scope: scope,
           });
+          analytics.logPageLoad(scope, $location.absUrl(), 'views/'+attrs.template);
           modalInstance.result.then(function(selectedItem) {
               scope.selected = selectedItem;
           }, function() {});
@@ -81,6 +87,26 @@
         elem.bind('click', function() {
         $uibModalStack.dismissAll();
         });
+      }
+    };
+  });
+
+  portfolioApp.directive('detailLink', function($location) {
+    return {
+      restrict: 'EA',
+      link: function(scope, elem, attrs) {
+        elem.bind('click', function() {
+          $location.url('/detail/'+ attrs.detailKey);
+          scope.$apply();
+        });
+      }
+    };
+  });
+
+  portfolioApp.service('analytics', function($window) {
+    return {
+      logPageLoad: function ($scope, absoluteUrl, locationUrl) {
+        $window.ga('send', 'pageview', {page: locationUrl});
       }
     };
   });

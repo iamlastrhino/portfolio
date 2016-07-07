@@ -1,0 +1,23 @@
+<!-- portfolio.top -->
+<div class="modal-header">
+	<div class="container-fluid">
+		<div class="row tablerow" style="float: left; width: 100%;">
+			<div class="col-sm-6" style="padding-left: 0px;">
+			    <h4 class="modal-title" id="myModalLabel">{{detail.portfolio.company}}</h4>
+			    <div>{{detail.portfolio.title}}</div>
+    		</div>
+			<div class="col-sm-6" style="text-align: right; padding-right: 0px;">
+			    <button ng-show="detail.portfolio.previouskey" 
+			    	detail-link detail-key="{{detail.portfolio.previouskey}}" type="button" class="btn btn-default">
+			    	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span>
+			    </button>
+			    <button ng-show="detail.portfolio.nextkey" 
+			    	detail-link detail-key="{{detail.portfolio.nextkey}}"  type="button" class="btn btn-default">
+			    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span>
+			    </button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal-body">
+<!-- end portfolio.top -->

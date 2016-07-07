@@ -178,19 +178,7 @@ div.col-sm-4 {
   transition-delay:.2s;
 }
 
-/* .modal-fullscreen */
 
-.modal-lg {
-  width: 100%;
-  max-width: 996px;
-}
-
-.vcenter {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
-    height: 100%;
-}
 .caption {
     top: .3rem;
     left: 30px;
